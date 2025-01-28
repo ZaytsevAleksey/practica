@@ -533,3 +533,46 @@ nav ul li #cart-button:hover {
     color: #3498db;
     text-decoration: none;
 }
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Фиксируем ширину карточки */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.profile-name {
+    margin-bottom: 0.5em;
+    color: #333; /* Цвет имени */
+}
+
+.profile-bio {
+    color: #777;
+    margin-bottom: 1em;
+}
+
+
+.profile-info {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 0.5em;
+}
