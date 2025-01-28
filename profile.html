@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPoint - Профиль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PixelPoint</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                     <!-- Контейнер для кнопок входа/регистрации и профиля/выхода -->
+                    <li id="auth-buttons">
+                        <button id="register-btn">Регистрация</button>
+                        <button id="login-btn">Вход</button>
+                    </li>
+                    <li id="profile-buttons" style="display: none;">
+                        <a href="profile.html">Профиль</a>
+                       <button id="logout-btn">Выйти</button>
+                   </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+       <section id="profile">
+            <h2>Профиль пользователя</h2>
+            <div class="profile-container">
+                <div class="avatar-container">
+                     <img src="" alt="." id="user-avatar">
+                    <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+                    <button id = "change-avatar-btn">Изменить аватар</button>
+                </div>
+                <div class="user-info">
+                     <div class="info-field">
+                        <label for="username">Логин:</label>
+                        <span id="username-display"></span>
+                        <input type="text" id="username" style="display: none;">
+                        <button class="edit-btn" data-field="username">Изменить</button>
+                    </div>
+                     <div class="info-field">
+                        <label for="email">Email:</label>
+                       <span id="email-display"></span>
+                       <input type="text" id="email" style="display: none;">
+                        <button class="edit-btn" data-field="email">Изменить</button>
+                    </div>
+                    <div class="info-field">
+                         <label for="phone">Номер телефона:</label>
+                        <span id="phone-display"></span>
+                       <input type="text" id="phone" style="display: none;">
+                         <button class="edit-btn" data-field="phone">Изменить</button>
+                   </div>
+                    <div class="info-field">
+                        <label for="full-name">Настоящее имя:</label>
+                       <span id="full-name-display"></span>
+                        <input type="text" id="full-name" style="display: none;">
+                         <button class="edit-btn" data-field="full-name">Изменить</button>
+                    </div>
+                    <div class="info-field">
+                         <label>Количество оформленных заказов:</label>
+                        <span id = "order-count-display">0</span>
+                    </div>
+                    
+                    <button id="change-password-btn">Изменить пароль</button>
+                    
+                      <div id="change-password-modal" class="modal" >
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Изменить пароль</h2>
+                              <form id="change-password-form">
+                                  <input type="password" placeholder="Новый пароль" required>
+                                  <input type="password" placeholder="Подтвердить новый пароль" required>
+                                  <button type="submit">Изменить пароль</button>
+                              </form>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Магазин компьютерной периферии</p>
+            <div class="footer-contacts">
+                <span>+7 (999) 123-45-67</span>
+                <a href="mailto:info@peripherals.ru">info-peripherals@mail.ru</a>
+           </div>
+        </div>
+    </footer>
+      <!-- Модальное окно регистрации -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Имя пользователя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно входа -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+             <span class="close">&times;</span>
+            <h2>Вход</h2>
+           <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин компьютерной периферии</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                 <h1>PixelPoint</h1>
+                <p class="slogan">Магазин компьютерной техники</p>
+            </div>
+            <nav>
+                <ul class="nav-links-left">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+                <ul class="nav-links-right">
+                    <li id="auth-buttons">
+                        <button id="register-btn">Регистрация</button>
+                        <button id="login-btn">Вход</button>
+                    </li>
+                    <li id="profile-buttons" style="display: none;">
+                         <a href="profile.html">Профиль</a>
+                        <button id="logout-btn">Выйти</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="https://avatars.mds.yandex.net/i?id=e27b9cf3a504e93c9b2ed2eedf22b826_l-5878501-images-thumbs&n=13" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://sun9-16.userapi.com/impg/B8UkkbUxqY7KusJi9yIz678VMG9GFctW3Ux_aQ/xC7xsTFKA_8.jpg?size=1280x713&quality=95&sign=7e17fb320b946b3689ef15134960a80a&c_uniq_tag=R4pe44ZXAKH9z9AVhecZeU4dgAT56Cx-P3nTI1DYCD4&type=album" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-h/w1200/6099419705.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://promka77.ru/thumb/2/76DRP0C_5swT7i9qvXLz2w/1000r/d/54643949_3.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://www.1c-interes.ru/upload/resize_src/ec/eca52efb6476ce9d6cc11a1401251725.jpg" alt="Image 3">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-slide">&lt;</button>
+            <button class="next-slide">&gt;</button>
+        </div>
+    </div>
+    <main>
+         <section class="hero container">
+             <div class="hero-content">
+                 <h2>Добро пожаловать в PixelPoint!</h2>
+                 <p>Мы предлагаем широкий ассортимент качественной компьютерной периферии для геймеров и профессионалов.</p>
+                 <a href="catalog.html" class="btn">Смотреть каталог</a>
+             </div>
+            <img src="https://avatars.mds.yandex.net/i?id=8ef8a099153986dfe4251935279cd0b7_l-4314243-images-thumbs&n=13" alt="Изображение компьютерной периферии">
+         </section>
+        <section class="featured-products container">
+            <h2>Рекомендуемые товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/12258964/2a0000019344c0dd48717ae0b1e8cc66b3eb/optimize" alt="Механическая клавиатура">
+                    <h3>ROG Falchion ACE HFX магнитная механическая клавиатура</h3>
+                    <p>Отличная клавиатура для гейминга и работы.</p>
+                    <span class="price">24000 руб.</span>
+                    <button>В корзину</button>
+                </div>
+                  <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/4547325/img_id2459800773805610037.jpeg/optimize" alt="Мышь">
+                    <h3>Беспроводная игровая мышь Logitech G G703 Hero</h3>
+                    <p>Мышка для истинных геймеров.</p>
+                    <span class="price">6500 руб.</span>
+                    <button>В корзину</button>
+                </div>
+                    <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/4484220/2a000001924217b2ee04763827f0478f73b7/optimize" alt="Наушники">
+                    <h3>Игровые наушники с микрофоном HyperX Cloud III</h3>
+                    <p>Беспроводные наушники с отличным звучанием.</p>
+                    <span class="price">8000 руб.</span>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </section>
+          <section class="benefits container">
+            <h2>Почему выбирают нас?</h2>
+              <div class="benefits-grid">
+                  <div class="benefit-card">
+                      <h3>Высокое качество</h3>
+                    <p>Мы предлагаем только проверенную и качественную продукцию.</p>
+                  </div>
+                  <div class="benefit-card">
+                      <h3>Быстрая доставка</h3>
+                    <p>Мы оперативно доставим ваш заказ в любую точку города.</p>
+                  </div>
+                   <div class="benefit-card">
+                      <h3>Поддержка клиентов</h3>
+                    <p>Наша команда поддержки всегда готова помочь вам с выбором и ответить на ваши вопросы.</p>
+                   </div>
+              </div>
+        </section>
+    </main>
+   
+     <div id="register-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 PixelPoint - Магазин компьютерной периферии</p>
+            <div class="footer-contacts">
+                <span>+7 (999) 123-45-67</span>
+                <a href="mailto:info@peripherals.ru">info-peripherals@mail.ru</a>
+           </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
