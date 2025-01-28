@@ -17,21 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
     function openModal(modal) {
         modal.style.display = 'block';
     }
-
      function closeModal(modal) {
         modal.style.display = 'none';
-    }
-    
+    } 
    function switchAuthButtons(){
         authButtons.style.display = 'none';
         profileButtons.style.display = 'flex';
-   }
-   
+   } 
   function switchLogoutButtons(){
        authButtons.style.display = 'flex';
         profileButtons.style.display = 'none';
-  }
-     
+  } 
     function setupModalClose(modal) {
         const closeButton = modal.querySelector('.close');
         closeButton.addEventListener('click', function () {
@@ -44,8 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-
     setupModalClose(registerModal);
     setupModalClose(loginModal);
 
@@ -58,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
      registerForm.addEventListener('submit', function (event) {
         event.preventDefault();
-          // Обработка формы регистрации (пока просто имитация)
         alert('Регистрация прошла успешно!');
         closeModal(registerModal);
         switchAuthButtons()
@@ -66,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       loginForm.addEventListener('submit', function (event) {
           event.preventDefault();
-           // Обработка формы входа (пока просто имитация)
         alert('Вход выполнен!');
         closeModal(loginModal);
          switchAuthButtons()
@@ -78,12 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function updateSlider() {
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
-
 prevButton.addEventListener('click', function() {
     currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
     updateSlider();
 });
-
 nextButton.addEventListener('click', function() {
      currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
     updateSlider();

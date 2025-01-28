@@ -102,7 +102,7 @@ main {
 .hero-content {
   flex: 1;
   padding: 20px;
-  text-align: left; /* Выравнивание текста по левому краю */
+  text-align: left;
 }
 .hero-content h2{
   font-size: 2.5em;
@@ -307,7 +307,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Стилизация модальных окон */
 .modal {
     display: none;
     position: fixed;
@@ -374,9 +373,6 @@ footer {
     text-decoration: none;
 }
 
-
-/* Стилизация кнопок аутентификации*/
-
 #auth-buttons button {
      background: #3498db;
      color: white;
@@ -405,7 +401,7 @@ footer {
 }
 .slider-container {
     position: relative;
-    width: 100%; /* Занимает всю ширину контейнера */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -415,20 +411,20 @@ footer {
 }
 
 .slide {
-    flex: 0 0 100%; /* Каждый слайд занимает 100% ширины контейнера */
+    flex: 0 0 100%; 
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Центрирование контента в слайде */
+    justify-content: center;
     position: relative;
 }
 
 .slide img {
     display: block;
     width: 100%;
-    height: auto; /* Сохраняет пропорции изображений */
+    height: auto; 
     object-fit: cover;
-    max-height: 800px; /* Максимальная высота слайдера */
+    max-height: 800px; 
 }
 
 .slider-nav {
@@ -439,7 +435,7 @@ footer {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-    padding: 0 10px; /* Отступы по бокам кнопок */
+    padding: 0 10px;
 }
 
 .slider-nav button {
@@ -452,7 +448,7 @@ footer {
     border-radius: 5px;
 }
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -522,7 +518,6 @@ footer {
     background-color: #d32f2f;
 }
 
-/* Стиль кнопки Корзина в навигации */
 nav ul li #cart-button {
     text-decoration: none;
     color: white;
@@ -546,7 +541,7 @@ nav ul li #cart-button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 400px; /* Фиксируем ширину карточки */
+    width: 400px;
 }
 
 .profile-image {
@@ -559,7 +554,7 @@ nav ul li #cart-button:hover {
 
 .profile-name {
     margin-bottom: 0.5em;
-    color: #333; /* Цвет имени */
+    color: #333;
 }
 
 .profile-bio {
